@@ -1,4 +1,4 @@
-package javasem2pr1;
+package pr1;
 public interface Predicate<T> {
     boolean p(T t);
 }
