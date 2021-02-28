@@ -1,4 +1,4 @@
-package javasem2;
+package javasem2pr1;
 
 class Main {
     public static void main(String[] args) {
