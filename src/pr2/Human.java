@@ -1,20 +1,16 @@
 package pr2;
-
 import java.time.LocalDate;
 public class Human {
-    int age;
-    int weight;
-    String firstName;
-    String lastName;
-    LocalDate birthDate;
+    private int age, weight;
+    private String firstName, lastName;
+    private LocalDate date;
 
-    public Human(int age, int weight, String firstName, String lastName, LocalDate birthDate) {
+    public Human(int age, String firstName, String lastName, LocalDate birthDate, int weight) {
         this.age = age;
-        this.weight = weight;
         this.firstName = firstName;
         this.lastName = lastName;
-        this.birthDate = birthDate;
-
+        this.date = birthDate;
+        this.weight = weight;
     }
 
     public int getAge() {
@@ -29,42 +25,36 @@ public class Human {
         return weight;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
     public void setWeight(int weight) {
         this.weight = weight;
+    }
+
+    public String getFirstName() {
+        return firstName;
     }
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
 
+    public LocalDate getBirthDate() {
+        return date;
+    }
+
     public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
+        this.date = date;
     }
 
     @Override
     public String toString() {
-        return "Human{" +
-                "age=" + age +
-                ", weight=" + weight +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", birthDate=" + birthDate +
-                '}';
+        return "Name: "+firstName + ' ' + lastName + ", Age: " + age +", Date: " + date + ", Weight:" + weight;
     }
 }
