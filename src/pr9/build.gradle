@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task pr{
+        println("Proverka2")
+}
+jar {
+    archiveName("proverka.jar")
+    manifest {
+        attributes 'main': 'com.company.main'
+    }
+}
+task move(type : Copy){
+    from 'build/libs/proverka.jar'
+    into 'C://Users//frayz//IdeaProjects//pr9//ddd'
+}
