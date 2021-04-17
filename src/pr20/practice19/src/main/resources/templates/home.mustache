@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Home page</title>
+</head>
+<body>
+<div>
+    <form name="addBuilding" method="post" action="/buildings/add">
+        <label>
+            <input type="text" name="type"
+                   placeholder="type"/>
+        </label>
+        <label>
+            <input type="text" name="creationDate"
+                   placeholder="creation date"/>
+        </label>
+        <label>
+            <input type="text" name="zipCode"
+                   placeholder="zip code"/>
+        </label>
+        <label>
+            <input type="text" name="addressText" placeholder="address text"/>
+        </label>
+        <button type="submit">Add</button>
+    </form>
+    {{#addresses}}
+        <h2>Group: {{addressText}}</h2>
+        <form method="post" action="/addresses/{{id}}/delete">
+            <button type="submit">
+                Remove
+            </button>
+        </form>
+        <form method="post" action="/addresses/{{id}}">
+            <button type="submit">
+                Show only this address
+            </button>
+        </form>
+        <ul>
+            <h4>Buildings:</h4>
+            {{#buildings}}
+                <li>
+                    <form method="post" action="/buildings/{{id}}/delete">
+                        {{type}} {{creationDate}}
+                        <button type="submit">
+                            Remove
+                        </button>
+                    </form>
+                </li>
+            {{/buildings}}
+        </ul>
+    {{/addresses}}
+    {{^addresses}}
+        <h2>No addresses added...</h2>
+    {{/addresses}}
+</div>
+</body>
+</html>
