@@ -1,0 +1,48 @@
+app/Application/Classes/Address.java
+ app.Application.Classes.Address
+app/Application/ScheduleMXBean.java
+ app.Application.ScheduleMXBean
+app/Application/Controllers/AddressController.java
+ app.Application.Controllers.AddressController
+app/Application/Interfaces/BuildingRepository.java
+ app.Application.Interfaces.BuildingRepository
+app/Application/EmailService.java
+ app.Application.EmailService
+app/Application/Configuration/WebSecurityConfig.java
+ app.Application.Configuration.WebSecurityConfig
+app/Application/Classes/Role.java
+ app.Application.Classes.Role
+app/Application/Aspect.java
+ app.Application.Aspect
+app/Application/Configuration/MvcConfig.java
+ app.Application.Configuration.MvcConfig
+app/Application/Services/UserService.java
+ app.Application.Services.UserService
+app/Application/Classes/Building.java
+ app.Application.Classes.Building
+app/Application/Classes/User.java
+ app.Application.Classes.User
+app/Application/Configuration/Config.java
+ app.Application.Configuration.Config
+app/Application/Controllers/CookiController.java
+ app.Application.Controllers.CookiController
+app/Application/Services/Schedule.java
+ app.Application.Services.Schedule
+app/Application/Interfaces/RoleRepository.java
+ app.Application.Interfaces.RoleRepository
+app/Application/Interfaces/AddressRepository.java
+ app.Application.Interfaces.AddressRepository
+app/Application/Application.java
+ app.Application.Application
+app/Application/Controllers/RegistrationController.java
+ app.Application.Controllers.RegistrationController
+app/Application/Controllers/BuildingController.java
+ app.Application.Controllers.BuildingController
+app/Application/Interfaces/UserRepository.java
+ app.Application.Interfaces.UserRepository
+app/Application/Services/AddressService.java
+ app.Application.Services.AddressService
+app/Application/Services/BuildingService.java
+ app.Application.Services.BuildingService
+app/Application/Controllers/AdminController.java
+ app.Application.Controllers.AdminController
